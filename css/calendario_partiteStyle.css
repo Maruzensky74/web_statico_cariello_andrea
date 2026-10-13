@@ -1,0 +1,147 @@
+body {
+    background-color: #f8d7da; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.titolo-pagina {
+    text-align: center;      
+    color: #2c3e50;             
+    margin-top: 30px;           /* Spazio vuoto sopra il titolo */
+    margin-bottom: 8px;         /* Spazio ridotto sotto per avvicinarlo alla linea */
+    font-family: sans-serif;    
+}
+
+.linea-decorativa {
+    width: 70px;                /* Larghezza della barretta */
+    height: 4px;                /* Spessore della barretta */
+    background-color: #3498db; 
+    border-radius: 2px;        
+    margin: 0 auto 30px auto;   /* 'auto' a sinistra e destra centra il blocco nella pagina */
+}
+
+
+.calendar-container {
+    display: flex;             
+    flex-direction: column;     /* Dispone le schede delle partite una sotto l'altra in colonna */
+    gap: 20px;                  /* Distanza automatica di 20px tra una card e l'altra */
+    max-width: 700px;         
+    margin: 0 auto;             /* Centra l'intero contenitore nella pagina */
+    padding: 0 15px 30px 15px;  
+    font-family: sans-serif;
+}
+
+
+.match-card {
+    background-color: #ffffff; 
+    border-radius: 12px;        /* Bordi arrotondati della card */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /*ombra  */
+    overflow: hidden;           /* Taglia tutto ciò che esce dai bordi arrotondati */
+    border: 1px solid #eef2f5;  /* Bordo sottile */
+    transition: transform 0.2s ease; /* animazione al passaggio del mouse */
+}
+
+
+.match-card:hover {
+    transform: translateY(-3px);
+}
+
+
+.match-header {
+    background-color: #f8f9fa;  
+    display: flex;              
+    justify-content: space-between; /* Spinge la giornata a sinistra e la data a destra */
+    padding: 10px 20px;       
+    font-size: 13px;            
+    color: #6c757d;             
+    font-weight: 600;          
+    border-bottom: 1px solid #eef2f5; /* Linea di divisione sottile sotto l'header */
+}
+
+.match-day {
+    color: #3498db;            
+    text-transform: uppercase;  
+}
+
+
+
+
+.match-body {
+    display: flex;              
+    justify-content: space-between; 
+    align-items: center;        /* Allinea verticalmente gli elementi al centro */
+    padding: 20px;            
+}
+
+.team {
+    flex: 1;                    /* Fa in modo che i box delle squadre occupino lo spazio disponibile */
+    font-size: 18px;          
+    font-weight: bold;          /* Testo in grassetto */
+    color: #2c3e50;           
+}
+
+
+.team.home {
+    text-align: right;
+}
+
+
+.team.away {
+    text-align: left;
+}
+
+
+.vs {
+    padding: 6px 14px;
+    background-color: #e3f2fd;  
+    color: #1976d2;            
+    font-weight: 800;           /* Grassetto */
+    border-radius: 20px;       
+    font-size: 12px;
+    margin: 0 15px;             /* Distanza laterale dalle squadre */
+}
+
+
+
+
+.match-footer {
+    text-align: center;         
+    padding: 8px;
+    background-color: #fafbfc; 
+    font-size: 12px;
+    color: #888;            
+    border-top: 1px dashed #eef2f5; /* Linea tratteggiata superiore */
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 30px 20px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #b02a37;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+
+.btn:hover {
+    background-color: #842029;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
